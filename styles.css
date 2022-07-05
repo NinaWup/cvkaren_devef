@@ -3,7 +3,8 @@
 
 /*estilos generales*/
 
-/*estoy añadiendo una linea de comentario para probar como hacer pull*/
+
+
 
 * {
     Margin: 0;
@@ -14,21 +15,20 @@
 
 /*selectores de etiqueta*/
 
-h1 {
-    color: #2A4B54;
+nav {
+    display: flex;
+    height: 5rem;
+    padding: 0.5rem;
+    justify-content: space-between;
+  
 }
-
 
 a {
     text-decoration: none;
     color: #2A4B54;
+    font-weight: 500;
 }
 
-a:hover {
-
-    color: #D3D271;
-    font-style: normal;
-}
 
 main {
 
@@ -56,35 +56,27 @@ footer {
 
 }
 
-/*selectores de clase*/
 
-.header_fit {
-    display: flex;
-    justify-content: end;
-    height: 120px;
+
+
+
+/*navegation menu*/
+
+.logo_container {
+    padding: 0.2rem;
+    height: 4rem;
+    width: 3rem;
+    margin-left: 0.5rem;
 }
 
-.img_logo {
-    margin-left: 1em;
-    padding: 1em;
-    position:absolute;
-    width: 109px;
-    height: 74px;
-    left: 50px;
+.logo_img {
+    height: 4rem;
+    width: 6rem;
 }
 
-.menu {
-    color: #2A4B54;
-    font-style: normal;
-    display: block;
-    align-self: flex-end;
-
-}
-
-.lista_menu {
+.menu_list {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
 
 }
 
@@ -94,20 +86,128 @@ footer {
 
 }
 
+.menu_list li a:hover {
+    color: rgb(6, 74, 77);
+    font-weight: 600;
+}
+
+.btn_primary {
+    width: 8rem;
+    height: 3rem;
+    background-color: rgb(34, 112, 146);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+/*introduction section*/
+
+.intro_section {
+    display: flex;
+    background-color: rgb(234, 237, 241);
+    height: 28em;
+}
+
+
+.first_title {
+    padding: 1em;
+    margin: 2em;
+    width: 20em;
+    color: #2A4B54;
+    display: flex;
+    align-items: center;
+
+}
+
+.card_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234, 237, 241);
+}
+
+.card {
+    width: 15em;
+    height: 22em;
+    margin: 2em;
+    padding: 2em;
+    border:dotted #2A4B54;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_text {
+text-align: center;
+}
+.card_img {
+    height: 4rem;
+    width: 6rem;
+}
+
+
+/*section about me*/
+.aboutme_section {
+    display: flex;
+    align-items: center;
+    height: 18em;
+    padding: 1em;
+    margin: 2em;
+}
+
+.text_presentacion {
+    padding: 1em;
+    margin: 1em;
+    color: #2A4B54;
+}
+
+.title_aboutme {
+
+    padding: 1em;
+    margin: 2em;
+    width: 20em;
+    color: #2A4B54;
+    display: flex;
+    align-items: center;
+
+}
+
+/*section details*/
+
+
+.details_section {
+    margin: 2em;
+    padding: 2em;
+    display: flex;
+    height: 15em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_details {
+    color: rgb(9, 81, 80);
+    margin: 1em;
+    padding: 1em;
+    width: 25%;
+
+}
+
+
+
+
+
 .hr_solid {
     border-top: 2px solid rgb(3, 9, 37);
 }
 
-.text_presentacion {
-    padding: 3em;
-    margin: 2em;
-    width: 540px;
-    height: 420px;
-    
-}
-.text_presentacion p {
-    color: #2A4B54;
-}
+
+
+
 .img_container {
     margin-top: 6em;
     margin-left: 3em;
@@ -121,22 +221,9 @@ footer {
 }
 
 
-.card_section {
-    display: flex;
-    justify-content:flex-end;
-    background-color: rgb(234, 237, 241);
-}
 
-.card {
-    width: 220px;
-    height: 300px;
-    margin: 2em;
-    padding: 2em;
-    border:dotted #2A4B54;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-}
+
+
 
 .img_container2 {
     display: flex;
@@ -145,26 +232,10 @@ footer {
     background-color: rgb(222, 232, 238);
 }
 
-.img_card {
-    width: 80px;
-    height: 100px;
-    margin: 1em;
-    padding: 1em;
-}
 
-.detalles {
-    margin: 2em;
-    padding: 1em;
-    display: flex;
-    justify-content: flex-end;
-}
 
-.estilo_lista {
-    color: rgb(9, 81, 80);
-    margin: 1em;
-    padding: 1em;
 
-}
+
 
 .table_section {
     display:flexbox;
